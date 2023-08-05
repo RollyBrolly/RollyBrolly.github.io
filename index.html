@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Rollamas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="Images/icon.png">
+    <script src="https://kit.fontawesome.com/4d8f21aa0b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Senior Highschool Student</p>
+            <h1>Greetings!<br> I'm Justine <span>Bryle</span>  Rollamas</h1>
+        </div>
+    </div>
+</div>
+<!------------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm just a regular senior Highschool student with irregular problems in life. Not only do I live in the Philippines (which has shit economy by the way)
+                    but I also experience some of the worst things to happen as an ICT student (broken pc by the way). That was a pretty shitty introduction, however that's
+                    just how life goes. Not everything has to go your way. Life likes to fuck us off somehow but its our responsibility to recover from those fuck ups and learn
+                    from it cause its what makes us stronger and wiser in the future.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphics Design</span><br>Designing Publication Materials</li>
+                            <li><span>Consistent Honor Student</span><br>Ambassingh</li>
+                            <li><span>Programming</span></li>Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Public Relations Officer<br> Research & Evaluation Committee<br>TVL Council Grade 12 Representative<br> Track Excellence Awardee</li>
+                            <li><span>2021 - 2022</span><br>Best in Digital Presentation<br>Ambassador of Goodwill</li>
+                            <li><span>2016 - 2018</span><br>Exellence in Media Design<br>Best in Creative Writing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Pasig Catholic College</li>
+                            <li><span>2018</span><br>St. Clare College</li>
+                            <li><span>2012</span><br>School Of St. Anthony</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Gaming</h2>
+                <p>Gaming is a lot more than clicking buttons and watching your character move on a screen to me.
+                    Its a form of art. An opportunity to explore the vast horizons of beautiful storytelling and addictive mechanics. Its a way to
+                    distract yourself from the harsh reality the world has to offer and be absorbed by the uncharted depths of the narrative.
+                    Gaming is a form of therapy and sanctuary to me.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-tv"></i>
+                <h2>Watching</h2>
+                <p>There's a reason why I just wrote watching here cause I basically watch any form of media. From movies, to series, to animes, to youtube videos and shit.
+                    Film is something dear to me and I've carried that aspect in my life ever since I was young. There's something oddly satisfying by sitting down
+                    with a bowl of snacks in your hand and being able to unwind by being captivated on a video that you're watching.
+                </p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-pencil"></i>
+                <h2>Drawing</h2>
+                <p>I can still sort of call this my hobby as I studied art for almost 3 years during the span of Covid. I had passion for art for a while before it slowly fades
+                    away as I begin to develop more things in my life that I had more passion and willing to invest my time into. Though, I still attain my skills in drawing,
+                    just not as detailed as it was back then.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Notable Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.jpg">
+                <div class="layer">
+                    <h3>SCB Volunteer</h3>
+                    <p>The Student Coordinating Body is the biggest organization in PCC, and I'm honored to say that I've contributed to provide my knowledge and skills to the SCB.
+                        I've emceed certain events and even designed a few posters for them so I think that's pretty good to put on a resume right?
+                        </p>
+                    <a href="https://www.facebook.com/pccshsscb"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.jpg">
+                <div class="layer">
+                    <h3>OSMO Production Trainee</h3>
+                    <p>I'm no longer a trainee at this point, instead my position is the Research Evaluator, though I still use the term "Production Trainee" as I find it
+                        more aesthetically appealing. I mostly serve as an editor in this org (kaya nga Production eh tanginamo). Basta maangas si sir DJ.
+                    </p>
+                    <a href="https://www.facebook.com/PCCSHSOSMO"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.jpg">
+                <div class="layer">
+                    <h3>TVL Council</h3>
+                    <p>Tangina ng org nato gusto konang umalis (dejk lang mahal ko kayo :>)This is the org I'm most notable and well known for as it represent my senior high school track which is 
+                        Technical Vocational Livelihood.
+                    </p>
+                    <a href="https://www.facebook.com/TVLCouncil"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>brylerollehtanginamobatmokoieemail@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0969696969</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jb.vasquezrollamas/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/Bryliee_"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/ssob_rolly/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/TVLCouncil"><i class="fa-solid fa-school"></i></a>
+                </div>
+                <a href="Images/Upwork Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rolly. Made with yutub tutoriyal.</p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
